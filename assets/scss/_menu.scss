@@ -1,14 +1,14 @@
 .menu {
   z-index: 9999;
   // Default
-  background: $light-background-header;
+  background: $dark-background-header;
 
   @media (prefers-color-scheme: dark) {
     background: $dark-background-header;
   }
 
   @media (prefers-color-scheme: light) {
-    background: $light-background-header;
+    background: $dark-background-header;
   }
 
   [data-theme=dark] & {
@@ -16,7 +16,7 @@
   }
 
   [data-theme=light] & {
-    background: $light-background-header;
+    background: $dark-background-header;
   }
 
   @media #{$media-size-phone} {
@@ -84,14 +84,14 @@
 
 
 .submenu {
-  background: $light-background-header;
+  background: $dark-background-header;
 
   @media (prefers-color-scheme: dark) {
     background: $dark-background-header;
   }
 
   @media (prefers-color-scheme: light) {
-    background: $light-background-header;
+    background: $dark-background-header;
   }
 
   [data-theme=dark] & {
@@ -99,7 +99,7 @@
   }
 
   [data-theme=light] & {
-    background: $light-background-header;
+    background: $dark-background-header;
   }
 
   ul {
@@ -124,7 +124,7 @@
     background: $dark-background-header;
 
     @media (prefers-color-scheme: light) {
-      background: $light-background-header;
+      background: $dark-background-header;
     }
     
     [data-theme=dark] & {
@@ -132,7 +132,7 @@
     }
   
     [data-theme=light] & {
-      background: $light-background-header;
+      background: $dark-background-header;
     }
   }
 
@@ -147,7 +147,7 @@
     background: $dark-background-header;
     
     @media (prefers-color-scheme: light) {
-      background: $light-background-header;
+      background: $dark-background-header;
     }
 
     [data-theme=dark] & {
@@ -155,7 +155,7 @@
     }
   
     [data-theme=light] & {
-      background: $light-background-header;
+      background: $dark-background-header;
     }
   }
 
