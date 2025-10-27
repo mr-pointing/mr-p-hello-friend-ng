@@ -4,6 +4,7 @@
   text-align: left;
   padding: 20px;
   margin: 20px auto;
+
   @media #{$media-size-tablet} {
     max-width: 600px;
   }
@@ -17,6 +18,7 @@
   &-title {
     font-size: 2.625rem;
     margin: 0 0 20px;
+
     @media #{$media-size-phone} {
       font-size: 2rem;
     }
@@ -47,6 +49,7 @@
     width: $max-width;
     max-width: $max-width;
     overflow: hidden;
+
     @media #{$media-size-tablet} {
       margin: 20px 0;
       width: 100%;
@@ -128,27 +131,27 @@
       letter-spacing: 0.1em;
       z-index: 1;
       // Default
-      background: $light-background;
-      color: $light-color-secondary;
+      background: $dark-background;
+      color: $dark-color-secondary;
 
       @media (prefers-color-scheme: dark) {
         background: $dark-background;
         color: $dark-color-secondary;
       }
-    
+
       @media (prefers-color-scheme: light) {
-        background: $light-background;
-        color: $light-color-secondary;
+        background: $dark-background;
+        color: $dark-color-secondary;
       }
-    
+
       [data-theme=dark] & {
         background: $dark-background;
         color: $dark-color-secondary;
       }
-    
+
       [data-theme=light] & {
-        background: $light-background;
-        color: $light-color-secondary;
+        background: $dark-background;
+        color: $dark-color-secondary;
       }
     }
 
@@ -187,14 +190,14 @@
   cursor: pointer;
   appearance: none;
   // Default
-  background: $light-background-secondary;
+  background: $dark-background-secondary;
 
   @media (prefers-color-scheme: dark) {
     background: $dark-background-secondary;
   }
 
   @media (prefers-color-scheme: light) {
-    background: $light-background-secondary;
+    background: $dark-background-secondary;
   }
 
   [data-theme=dark] & {
@@ -202,10 +205,10 @@
   }
 
   [data-theme=light] & {
-    background: $light-background-secondary;
+    background: $dark-background-secondary;
   }
 
-  + .button {
+  +.button {
     margin-left: 10px;
   }
 
