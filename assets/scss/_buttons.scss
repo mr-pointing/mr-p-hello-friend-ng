@@ -22,7 +22,7 @@ a.button {
   cursor: pointer;
   outline: none;
   // Default
-  background: $light-background-header;
+  background: $dark-background-header;
 
   @media (prefers-color-scheme: dark) {
     background: $dark-background-header;
@@ -30,7 +30,7 @@ a.button {
   }
 
   @media (prefers-color-scheme: light) {
-    background: $light-background-header;
+    background: $dark-background-header;
   }
 
   [data-theme=dark] & {
@@ -39,7 +39,7 @@ a.button {
   }
 
   [data-theme=light] & {
-    background: $light-background-header;
+    background: $dark-background-header;
   }
 
   &.outline {
@@ -47,24 +47,24 @@ a.button {
     box-shadow: none;
     padding: 8px 18px;
     // Default
-    border-color: $light-background-secondary;
+    border-color: $dark-background-secondary;
 
     @media (prefers-color-scheme: dark) {
       border-color: $dark-background-secondary;
       color: inherit;
     }
-  
+
     @media (prefers-color-scheme: light) {
-      border-color: $light-background-secondary;
+      border-color: $dark-background-secondary;
     }
-  
+
     [data-theme=dark] & {
       border-color: $dark-background-secondary;
       color: inherit;
     }
-  
+
     [data-theme=light] & {
-      border-color: $light-background-secondary;
+      border-color: $dark-background-secondary;
     }
 
     :hover {
@@ -116,24 +116,24 @@ a.button {
     cursor: pointer;
     outline: none;
     // Default
-    background: $light-background-secondary;
+    background: $dark-background-secondary;
 
     @media (prefers-color-scheme: dark) {
       background: $dark-background-secondary;
       color: inherit;
     }
-  
+
     @media (prefers-color-scheme: light) {
-      background: $light-background-secondary;
+      background: $dark-background-secondary;
     }
-  
+
     [data-theme=dark] & {
       background: $dark-background-secondary;
       color: inherit;
     }
-  
+
     [data-theme=light] & {
-      background: $light-background-secondary;
+      background: $dark-background-secondary;
     }
   }
 }
