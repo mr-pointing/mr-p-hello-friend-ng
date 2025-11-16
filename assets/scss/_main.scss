@@ -12,6 +12,17 @@ html {
 }
 
 body {
+  --pagefind-ui-scale: 0.8;
+  --pagefind-ui-primary: #034ad8;
+  --pagefind-ui-text: $dark-color;
+  --pagefind-ui-background: #ffffff;
+  --pagefind-ui-border: #eeeeee;
+  --pagefind-ui-tag: #eeeeee;
+  --pagefind-ui-border-width: 2px;
+  --pagefind-ui-border-radius: 8px;
+  --pagefind-ui-image-border-radius: 8px;
+  --pagefind-ui-image-box-ratio: 3 / 2;
+  --pagefind-ui-font: sans-serif;
   margin: 0;
   padding: 0;
   font-family: Inter, -apple-system, BlinkMacSystemFont, "Roboto",
@@ -32,8 +43,8 @@ body {
   // Default
   background-color: $dark-background;
   color: $dark-color;
-  
-  
+
+
 
   @media #{$media-size-phone} {
     font-size: 1rem;
@@ -107,7 +118,7 @@ h4 {
 
 a {
   color: inherit;
-  
+
   transition: color 0.3s ease; // Smooth transition for color change
 
   &:hover {
@@ -117,13 +128,13 @@ a {
 
 .title_hover {
   color: inherit;
-  
+
   transition: color 0.3s ease; // Smooth transition for color change
 
   &:hover {
     color: #800020; // Bright red on hover
   }
-  
+
 }
 
 img {
@@ -142,6 +153,7 @@ img {
   &.right {
     margin-left: auto;
   }
+
   &.circle {
     border-radius: 50%;
     max-width: 25%;
@@ -161,6 +173,7 @@ figure {
   &.left-floated {
     margin-right: auto;
     float: left;
+
     img {
       margin: 20px 20px 20px 0;
     }
@@ -178,6 +191,7 @@ figure {
   &.right-floated {
     margin-left: auto;
     float: right;
+
     img {
       margin: 20px 0 20px 20px;
     }
@@ -208,7 +222,9 @@ figure {
   }
 }
 
-em, i, strong {
+em,
+i,
+strong {
   // Default
   color: $dark-color-variant;
 
@@ -287,15 +303,15 @@ pre {
     @media (prefers-color-scheme: dark) {
       color: inherit;
     }
-  
+
     @media (prefers-color-scheme: light) {
       color: inherit;
     }
-  
+
     [data-theme=dark] & {
       color: inherit;
     }
-  
+
     [data-theme=light] & {
       color: inherit;
     }
