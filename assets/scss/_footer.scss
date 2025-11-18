@@ -12,6 +12,10 @@
     --pagefind-ui-image-border-radius: 8px;
     --pagefind-ui-image-box-ratio: 3 / 2;
     --pagefind-ui-font: sans-serif;
+
+    button {
+      display: unset;
+    }
   }
 
   padding: 40px 20px;
